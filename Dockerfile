@@ -13,7 +13,9 @@ RUN apt-get update && apt-get -y install \
 	php-intl \
 	php-mbstring \
 	php-zip \
-	php-mysql
+	php-mysql \
+	php-xml \
+	php-codesniffer
 
 # Delete all the apt list files since they're big and get stale quickly
 RUN rm -rf /var/lib/apt/lists/*
